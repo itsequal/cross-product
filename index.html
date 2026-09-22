@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Producto cruz — Sigilo</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <aside id="hud" aria-live="polite">
+      <p id="hud-badge" class="badge" hidden>Análisis</p>
+      <p class="kicker">Producto cruz</p>
+      <h1>Sigilo vectorial</h1>
+      <p id="hud-objective">Llega a la meta verde sin entrar en la zona roja del cono.</p>
+      <p class="visibility-line">
+        Visibilidad
+        <strong id="hud-visibility" data-state="FUERA">FUERA</strong>
+      </p>
+
+      <dl id="hud-math" hidden>
+        <div><dt>Distancia</dt><dd id="val-distance">0.00</dd></div>
+        <div><dt>Rango</dt><dd id="val-range">fuera</dd></div>
+        <div><dt>FOV</dt><dd id="val-fov">70°</dd></div>
+        <div><dt>Ángulo al jugador</dt><dd id="val-angle">0.0°</dd></div>
+        <div><dt>F · P</dt><dd id="val-dot">0.000</dd></div>
+        <div><dt>F × P</dt><dd id="val-cross">(0.000, 0.000, 0.000)</dd></div>
+        <div><dt>|F × P|</dt><dd id="val-cross-length">0.000</dd></div>
+        <div><dt>Lado</dt><dd id="val-side">CENTRO</dd></div>
+      </dl>
+
+      <p id="hud-compare" hidden></p>
+      <p id="hud-formula" hidden></p>
+      <ul id="hud-legend" class="legend" hidden>
+        <li><i class="swatch swatch-f"></i>F Forward</li>
+        <li><i class="swatch swatch-p"></i>P ToPlayer</li>
+        <li><i class="swatch swatch-c"></i>F × P</li>
+      </ul>
+      <p id="hud-help"></p>
+    </aside>
+
+    <div id="banner" hidden>
+      <p id="banner-title"></p>
+      <p id="banner-sub"></p>
+    </div>
+
+    <div id="labels">
+      <span id="label-theta" class="world-label label-theta" hidden></span>
+      <span id="label-half" class="world-label label-half" hidden></span>
+      <span id="label-goal" class="world-label label-goal">META</span>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
