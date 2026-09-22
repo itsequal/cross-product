@@ -1,6 +1,6 @@
 # Sigilo vectorial
 
-Prototipo en el navegador que muestra el **producto cruz** y el **producto punto** dentro de una detección de campo de visión. No es un juego completo: es una escena pequeña para ver la matemática mientras te mueves.
+Prototipo en el navegador que muestra el **producto cruz** y el **producto punto** dentro de una detección de campo de visión.
 
 ## Ejecutar
 
